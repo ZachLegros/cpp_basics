@@ -1,16 +1,20 @@
 // or #pragma once
-#ifndef _CAR_ // guard
-#define _CAR_
+#ifndef CAR_H
+#define CAR_H
 
-class car{
+#include <string>
+
+using namespace std;
+
+class Car{
     private:
         float speed;
-    car(){
-        speed = 0;
-    }
+        string color;
     public:
-        float getSpeed();
-        void accelerate(float meters, float seconds);
+        Car();
+       /* float getSpeed();
+        string getColor();
+        void accelerate(float, float);*/
 };
 
 
