@@ -22,5 +22,5 @@ string Car::getColor()
 
 void Car::accelerate(float meters, float seconds)
 {
-    speed = 10;
+    speed = meters/seconds;
 }
