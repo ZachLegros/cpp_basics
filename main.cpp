@@ -1,11 +1,11 @@
-#include "Car.h"
 #include <iostream>
-
-using namespace std;
+#include "Car.h"
 
 int main(){
-    Car car1();
-    /*car1.getColor();
-    car1.getSpeed();*/
+    Car redCar("red");
+    std::cout << redCar.getColor() << "\n";
+    std::cout << redCar.getSpeed() << "\n";
+    redCar.accelerate(0, 0);
+    std::cout<<redCar.getSpeed() << "\n";
     return 0;
 }

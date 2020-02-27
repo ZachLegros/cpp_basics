@@ -4,13 +4,13 @@
 
 using namespace std;
 
-Car::Car()
+Car::Car(string color)
 {
-    color = "red";
-    speed = 0;
+    this->color = color;
+    this->speed = 0;
 }
 
-/*float Car::getSpeed()
+float Car::getSpeed()
 {
     return speed;
 }
@@ -23,4 +23,4 @@ string Car::getColor()
 void Car::accelerate(float meters, float seconds)
 {
     speed = 10;
-}*/
+}

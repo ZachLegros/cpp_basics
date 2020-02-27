@@ -11,10 +11,10 @@ class Car{
         float speed;
         string color;
     public:
-        Car();
-       /* float getSpeed();
+        Car(string);
+        float getSpeed();
         string getColor();
-        void accelerate(float, float);*/
+        void accelerate(float, float);
 };
 
 
