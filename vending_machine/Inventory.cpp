@@ -14,12 +14,16 @@ void Inventory::add(Product p){
     inventory.insert({items++, p});
 };
 
-void Inventory::remove(int i){
-    inventory.erase(i);
+void Inventory::sell(int i){
+    if (inventory.at(i).quantity > 0) {
+        inventory.at(i).quantity--;
+        cout << "You just bought: " << inventory.at(i).name << " for " << inventory.at(i).price << "$ \n";
+    } 
 };
 
 void Inventory::toString(){
+    cout << "Inventory: \n";
     for(unsigned i=0; i<items; i++){
-        cout << inventory.at(i).name + "\n" << "price: " << inventory.at(i).price << " quantity: " << inventory.at(i).quantity;
+        cout << inventory.at(i).name + "\n" << "price: " << inventory.at(i).price << ", quantity: " << inventory.at(i).quantity << "\n";
     }
 }

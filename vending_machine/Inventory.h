@@ -12,7 +12,7 @@ class Inventory{
     public:
         Inventory();
         void add(Product);
-        void remove(int);
+        void sell(int);
         void toString();
         
 }; 
