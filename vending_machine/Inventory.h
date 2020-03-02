@@ -1,7 +1,7 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
 #include "Product.h"
-#include <bits/stdc++.h> 
+#include<map>
 
 using namespace std;
 
@@ -11,6 +11,9 @@ class Inventory{
         int items;
     public:
         Inventory();
+        void add(Product);
+        void remove(int);
+        void toString();
         
 }; 
 
